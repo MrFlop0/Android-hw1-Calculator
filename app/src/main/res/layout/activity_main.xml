@@ -4,15 +4,219 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="end"
+        android:text="@string/zero"
+        android:textColor="@color/orange"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toTopOf="@id/help"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/clear_text"
+                style="@style/Button"
+                android:text="@string/clear"
+                android:textColor="@color/black"
+
+                >
+
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/divide"
+                style="@style/Button"
+                android:text="@string/divide"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/multiply"
+                style="@style/Button"
+                android:text="@string/multiply"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/clear_symbol"
+                style="@style/Button"
+                android:text="@string/backspace"
+                >
+            </android.widget.Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/seven"
+                style="@style/Button"
+                android:text="@string/seven"
+                android:textColor="@color/black"
+
+                >
+
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/eight"
+                style="@style/Button"
+                android:text="@string/eight"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/nine"
+                style="@style/Button"
+                android:text="@string/nine"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/minus"
+                style="@style/Button"
+                android:text="@string/minus"
+                >
+            </android.widget.Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/four"
+                style="@style/Button"
+                android:text="@string/four"
+                >
+
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/five"
+                style="@style/Button"
+                android:text="@string/five"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/six"
+                style="@style/Button"
+                android:text="@string/six"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/plus"
+                style="@style/Button"
+                android:text="@string/plus"
+                >
+            </android.widget.Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/one"
+                style="@style/Button"
+                android:text="@string/one"
+                >
+
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/two"
+                style="@style/Button"
+                android:text="@string/two"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/three"
+                style="@style/Button"
+                android:text="@string/three"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/negate"
+                style="@style/Button"
+                android:text="@string/negate"
+                >
+            </android.widget.Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/zero"
+                style="@style/Button"
+                android:layout_width="0dp"
+                android:text="@string/zero"
+                android:layout_weight="40"
+                >
+
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/comma"
+                style="@style/Button"
+                android:text="@string/comma"
+                >
+            </android.widget.Button>
+
+            <android.widget.Button
+                android:id="@+id/equal"
+                style="@style/Button"
+                android:text="@string/equal"
+                >
+            </android.widget.Button>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
