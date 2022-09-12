@@ -7,5 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="orange">#F28705</color>
+    <color name="orange">#fdad5c</color>
+
+
+    <color name="actionText">#6A6A6A</color>
+    <color name="equalColor">#FF8C21</color>
+    <color name="action">#75E3FF</color>
+    <color name="main">#5159F7</color>
+    <color name="start">#30cfd0</color>
+    <color name="button">#D1D8D7</color>
+    <color name="end">#330867</color>
 </resources>

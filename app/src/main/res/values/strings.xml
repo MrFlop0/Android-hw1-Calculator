@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Calculator</string>
     <string name="clear">C</string>
-    <string name="divide">/</string>
-    <string name="multiply">X</string>
-    <string name="backspace"><![CDATA[<-]]></string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="backspace">-</string>
     <string name="seven">7</string>
     <string name="eight">8</string>
     <string name="nine">9</string>
@@ -16,7 +16,8 @@
     <string name="two">2</string>
     <string name="three">3</string>
     <string name="equal">=</string>
-    <string name="negate">+/-</string>
-    <string name="comma">,</string>
+    <string name="comma">.</string>
     <string name="zero">0</string>
+    <string name="right_br">)</string>
+    <string name="left_br">(</string>
 </resources>

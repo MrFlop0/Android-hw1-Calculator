@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Calculator" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/orange</item>
@@ -11,16 +11,24 @@
         <item name="backgroundColor">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Button">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">45sp</item>
-        <item name="android:layout_weight">1</item>
+    <style name="numberButton">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">80dp</item>
         <item name="android:background">@drawable/button_view</item>
-        <item name="android:layout_margin">5dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">7dp</item>
+    </style>
+
+    <style name="actionButton">
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:background">@drawable/action_buttons</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">7dp</item>
+        <item name="android:textColor">@color/actionText</item>
     </style>
 </resources>
