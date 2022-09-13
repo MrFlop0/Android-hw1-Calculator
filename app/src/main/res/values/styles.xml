@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="numberButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:onClick">numberPush</item>
+        <item name="android:background">@drawable/button_view</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="actionButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:onClick">actionPush</item>
+        <item name="android:background">@drawable/action_buttons</item>
+        <item name="android:textColor">@color/actionText</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="buttonRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+
+    <style name="EqualButton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:onClick">equalPush</item>
+        <item name="android:background">@drawable/equal_view</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Backspace">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:onClick">backspacePush</item>
+        <item name="android:background">@drawable/action_buttons</item>
+        <item name="android:textColor">@color/actionText</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="ClearAll">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:onClick">clrAll</item>
+        <item name="android:background">@drawable/action_buttons</item>
+        <item name="android:textColor">@color/actionText</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+</resources>

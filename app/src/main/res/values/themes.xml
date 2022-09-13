@@ -3,7 +3,7 @@
     <style name="Theme.Calculator" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorPrimaryVariant">@color/white</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -15,20 +15,5 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="numberButton">
-        <item name="android:layout_height">70dp</item>
-        <item name="android:layout_width">80dp</item>
-        <item name="android:background">@drawable/button_view</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:layout_margin">7dp</item>
-    </style>
 
-    <style name="actionButton">
-        <item name="android:layout_height">70dp</item>
-        <item name="android:layout_width">80dp</item>
-        <item name="android:background">@drawable/action_buttons</item>
-        <item name="android:textSize">25sp</item>
-        <item name="android:layout_margin">7dp</item>
-        <item name="android:textColor">@color/actionText</item>
-    </style>
 </resources>
