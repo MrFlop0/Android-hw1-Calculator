@@ -5,18 +5,18 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#000000</color>
-    <color name="background_main">#FFFFFFFF</color>
+    <color name="black">#ffffff</color>
+    <color name="background_main">#000000</color>
     <color name="orange">#fdad5c</color>
 
 
-    <color name="actionText">#3f70e1</color>
-    <color name="equalColor">#3f70e1</color>
+    <color name="actionText">#57a1f9</color>
+    <color name="equalColor">#2d6ad5</color>
     <color name="equalButton">#ffffff</color>
-    <color name="action">#eaf0fe</color>
+    <color name="action">#1b2d45</color>
     <color name="main">#5159F7</color>
     <color name="start">#30cfd0</color>
-    <color name="button">#F8F8F8</color>
+    <color name="button">#292929</color>
     <color name="end">#330867</color>
-    <color name="inputExpr">#1C1C1C</color>
+    <color name="inputExpr">#ffffff</color>
 </resources>

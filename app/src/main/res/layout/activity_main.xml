@@ -4,15 +4,170 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_main"
     tools:context=".MainActivity">
 
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/inputExpression"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/inputExpr"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@id/inputExpression" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/topKeyboard">
+
+        <LinearLayout style="@style/buttonRow">
+
+            <android.widget.Button
+                android:id="@+id/clear_text"
+                style="@style/ClearAll"
+                android:text="@string/clear" />
+
+            <android.widget.Button
+                android:id="@+id/multiply"
+                style="@style/actionButton"
+                android:text="@string/multiply" />
+
+            <android.widget.Button
+                android:id="@+id/divide"
+                style="@style/actionButton"
+                android:text="@string/divide" />
+
+            <android.widget.Button
+                android:id="@+id/backspace"
+                style="@style/Backspace"
+                android:text="@string/backspace" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <android.widget.Button
+                android:id="@+id/seven"
+                style="@style/numberButton"
+                android:text="@string/seven" />
+
+            <android.widget.Button
+                android:id="@+id/eight"
+                style="@style/numberButton"
+                android:text="@string/eight" />
+
+            <android.widget.Button
+                android:id="@+id/nine"
+                style="@style/numberButton"
+                android:text="@string/nine" />
+
+            <android.widget.Button
+                android:id="@+id/minus"
+                style="@style/actionButton"
+                android:text="@string/minus" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <android.widget.Button
+                android:id="@+id/four"
+                style="@style/numberButton"
+                android:text="@string/four" />
+
+            <android.widget.Button
+                android:id="@+id/five"
+                style="@style/numberButton"
+                android:text="@string/five" />
+
+            <android.widget.Button
+                android:id="@+id/six"
+                style="@style/numberButton"
+                android:text="@string/six" />
+
+            <android.widget.Button
+                android:id="@+id/plus"
+                style="@style/actionButton"
+                android:text="@string/plus" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <android.widget.Button
+                android:id="@+id/one"
+                style="@style/numberButton"
+                android:text="@string/one" />
+
+            <android.widget.Button
+                android:id="@+id/two"
+                style="@style/numberButton"
+                android:text="@string/two" />
+
+            <android.widget.Button
+                android:id="@+id/three"
+                style="@style/numberButton"
+                android:text="@string/three" />
+
+            <android.widget.Button
+                android:id="@+id/equal"
+                style="@style/EqualButton"
+                android:text="@string/equal" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/buttonRow">
+
+            <android.widget.Button
+                android:id="@+id/zero"
+                style="@style/numberButton"
+                android:text="@string/zero" />
+
+            <android.widget.Button
+                android:id="@+id/point"
+                style="@style/numberButton"
+                android:text="@string/point" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topKeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
