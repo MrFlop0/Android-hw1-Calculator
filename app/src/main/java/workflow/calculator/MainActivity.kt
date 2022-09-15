@@ -12,6 +12,8 @@ import org.mariuszgromada.math.mxparser.Expression
 class MainActivity : AppCompatActivity() {
 
     private var canPlacePoint = true
+    private var canPlaceAction = false
+    private val listOfActions = listOf<Char>('+', '-', '÷', '×')
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,16 +42,21 @@ class MainActivity : AppCompatActivity() {
             result.append(findViewById<Button>(view.id).text)
             canPlacePoint = false
         }
+        canPlaceAction = true
     }
 
     fun actionPush(view: View) {
-        result.append(findViewById<Button>(view.id).text)
-        canPlacePoint = true
+        if (canPlaceAction) {
+            result.append(findViewById<Button>(view.id).text)
+            canPlacePoint = true
+            canPlaceAction = false
+        }
     }
 
     fun equalPush(view: View) {
         val inputLine = result.text.toString()
         canPlacePoint = false
+        canPlaceAction = true
 
         val expr = Expression(inputLine)
         val checkExpr = expr.calculate().toString()
@@ -68,17 +75,30 @@ class MainActivity : AppCompatActivity() {
         inputExpression.text = ""
         result.text = ""
         canPlacePoint = true
+        canPlaceAction = false
     }
 
     fun backspacePush(view: View) {
         val lengthOfExpression = result.text.length
 
         if (lengthOfExpression > 0) {
+            val lastSymbol = result.text.toString()[lengthOfExpression - 1]
 
-            if (result.text.toString()[lengthOfExpression - 1] == '.') {
+            if (lastSymbol == '.') {
                 canPlacePoint = true
             }
+            if (listOfActions.contains(lastSymbol)) {
+                canPlaceAction = true
+            }
+            if (lengthOfExpression > 2) {
+                if (listOfActions.contains(result.text.toString()[lengthOfExpression - 2])) {
+                    canPlaceAction = false
+                }
+            }
 
+            if (lengthOfExpression - 1 == 0) {
+                canPlaceAction = false
+            }
             result.text = result.text.substring(0, lengthOfExpression - 1)
         }
     }
